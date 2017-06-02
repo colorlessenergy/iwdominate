@@ -2,10 +2,59 @@
 layout: default
 ---
 
-<header>
+<header class="home">
   {% include nav.html %}
-  <p>EX Semi Pro</p>
-  <p>Iwilldominate</p>
+  <div class="header-content">
+    <h2>IwillDominate: </h2>
+    <p>The best Ex Semi Pro in League of Legends history</p>
+  </div>
 </header>
-
+<section>
+  <p>Iwilldominate Was an Ex semi-pro, that played on Dignitas, Curse, which is Team Liquid now. Iwdominate is now a full time streamer and is labeled as toxic. He has a youtube channel which are highlights of his twitch streams.</p>
+</section>
+<section>
+  <h1>Places to find IWDOMINATE</h1>
+  <div>
+    {% for social in site.data.social-media %}
+      <a href="{{social.link}}" height="100px">
+        <div style="background-image: url({{social.bg}})">
+          <p>{{social.desc}}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div>
+    <h2>Former Teammates</h2>
+    <p>Iwdominate played with</p>
+  </div>
+  <div>
+    {% for teammates in site.data.former-teammates %}
+    <div>
+      <p><a href="{{teammates.link}}">{{teammates.title}}</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div>
+    <h2>Want to see more Iwdominate</h2>
+    <h2>Want to see some high level toxicity</h2>
+    <p>watch his stream now!</p>
+  </div>
+  <p><a href="https://www.twitch.tv/iwilldominate">iwdominate stream</a></p>
+</section>
+<section>
+  {% for game in site.data.gameplay %}
+    <div>
+      <img src="{{game.img}}" alt="picture of a league of legends champion">
+      <p>{{game.title}}</p>
+    </div>
+  {% endfor %}
+</section>
+<section>
+  <h1>Want a website?</h1>
+  <p><a href="contact.html">contact me</a></p>
+</section>
 <p>Website About EX Semi Pro Iwdominate</p>
