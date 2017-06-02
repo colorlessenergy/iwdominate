@@ -5,38 +5,42 @@ layout: default
 <header class="home">
   {% include nav.html %}
   <div class="header-content">
-    <h2>IwillDominate: </h2>
-    <p>The best Ex Semi Pro in League of Legends history</p>
+    <h1>IwillDominate: </h1>
+    <p>The best Ex Semi Pro</p>
+    <p>in League of Legends history</p>
   </div>
 </header>
-<section>
-  <p>Iwilldominate Was an Ex semi-pro, that played on Dignitas, Curse, which is Team Liquid now. Iwdominate is now a full time streamer and is labeled as toxic. He has a youtube channel which are highlights of his twitch streams.</p>
-</section>
-<section>
-  <h1>Places to find IWDOMINATE</h1>
-  <div>
-    {% for social in site.data.social-media %}
-      <a href="{{social.link}}" height="100px">
-        <div style="background-image: url({{social.bg}})">
-          <p>{{social.desc}}</p>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-</section>
-<section>
-  <div>
-    <h2>Former Teammates</h2>
-    <p>Iwdominate played with</p>
-  </div>
-  <div>
-    {% for teammates in site.data.former-teammates %}
-    <div>
-      <p><a href="{{teammates.link}}">{{teammates.title}}</a></p>
+<main>
+  <section class="about">
+    <p>Iwilldominate is a Ex semi-pro, that played on Dignitas, Curse, which is Team Liquid now. Iwdominate is now a full time streamer and is labeled as toxic. He has a youtube channel which are highlights of his twitch streams.</p>
+  </section>
+  <section class="social">
+    <h1>Places to find IWDOMINATE</h1>
+    <div class="social-contain">
+      {% for social in site.data.social-media %}
+        <a href="{{social.link}}">
+          <div class="bg" style="background-image: url({{social.bg}})">
+            <h2>{{social.title}}</h2>
+            <p>{{social.desc}}</p>
+          </div>
+        </a>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-</section>
+  </section>
+  <section>
+    <div>
+      <h2>Former Teammates</h2>
+      <p>Iwdominate played with</p>
+    </div>
+    <div>
+      {% for teammates in site.data.former-teammates %}
+      <div>
+        <p><a href="{{teammates.link}}">{{teammates.title}}</a></p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</main>
 <section>
   <div>
     <h2>Want to see more Iwdominate</h2>

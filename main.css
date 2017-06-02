@@ -4,6 +4,58 @@ html, body {
   padding: 0;
 }
 
+main {
+  background-color: #1e1831;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main .about {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+}
+
+main .about p {
+  font-size: 25px;
+  width: 60%;
+}
+
+main .social .social-contain {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+main .social .social-contain a {
+  width: 45%;
+}
+
+main .social .social-contain .bg {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 500px;
+  width: 100%;
+}
+
+main .social .social-contain .bg h2, main .social .social-contain .bg p {
+  margin: 0 0 5% 5%;
+}
+
+main .social .social-contain .bg h2, main .social .social-contain .bg p {
+  color: #fff;
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -26,6 +78,7 @@ nav ul {
 
 nav ul li a {
   color: #000;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -39,12 +92,16 @@ header {
 
 header .header-content {
   align-items: center;
-  color: #fff;
+  color: #009688;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  font-size: 25px;
+  font-size: 50px;
   justify-content: center;
+}
+
+header .header-content h1, header .header-content p {
+  margin: 0;
 }
 
 
