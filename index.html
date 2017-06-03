@@ -21,35 +21,35 @@ layout: default
         <a href="{{social.link}}">
           <div class="bg" style="background-image: url({{social.bg}})">
             <h2>{{social.title}}</h2>
-            <p>{{social.desc}}</p>
+            <p class="desc">{{social.desc}}</p>
           </div>
         </a>
       {% endfor %}
     </div>
   </section>
-  <section>
-    <div>
+  <section class="teammates">
+    <div class="teammates-info">
       <h2>Former Teammates</h2>
       <p>Iwdominate played with</p>
     </div>
-    <div>
-      {% for teammates in site.data.former-teammates %}
-      <div>
-        <p><a href="{{teammates.link}}">{{teammates.title}}</a></p>
+      <div class="teammates-desc">
+        {% for teammates in site.data.former-teammates %}
+        <div>
+          <p><a href="{{teammates.link}}">{{teammates.title}}</a></p>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
   </section>
 </main>
-<section>
+<section class="contact-iwd">
   <div>
     <h2>Want to see more Iwdominate</h2>
     <h2>Want to see some high level toxicity</h2>
     <p>watch his stream now!</p>
   </div>
-  <p><a href="https://www.twitch.tv/iwilldominate">iwdominate stream</a></p>
+  <p class="link-stream"><a href="https://www.twitch.tv/iwilldominate">iwdominate stream</a></p>
 </section>
-<section>
+<section class="gameplay">
   {% for game in site.data.gameplay %}
     <div>
       <img src="{{game.img}}" alt="picture of a league of legends champion">
@@ -57,8 +57,7 @@ layout: default
     </div>
   {% endfor %}
 </section>
-<section>
+<section class="self-ad">
   <h1>Want a website?</h1>
   <p><a href="contact.html">contact me</a></p>
 </section>
-<p>Website About EX Semi Pro Iwdominate</p>

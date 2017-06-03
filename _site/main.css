@@ -44,16 +44,96 @@ main .social .social-contain .bg {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+  margin: 3% 0;
   height: 500px;
   width: 100%;
+  z-index: 1;
 }
 
-main .social .social-contain .bg h2, main .social .social-contain .bg p {
+main .social .social-contain .bg::before {
+  background-color: #000;
+  content: '';
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+main .social h1 {
+  text-align: center;
+}
+
+main .social .social-contain .bg:hover::before {
+  opacity: 0.5;
+}
+
+main .social .social-contain .bg .desc {
+  transform: translateY(34px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+main .social .social-contain .bg:hover > .desc {
+  margin-top: 5%;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+main .social .social-contain .bg h2 {
+  margin: 0 0 0 5%;
+}
+
+main .social .social-contain .bg p {
   margin: 0 0 5% 5%;
 }
 
 main .social .social-contain .bg h2, main .social .social-contain .bg p {
   color: #fff;
+}
+
+main .teammates .teammates-desc {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+main .teammates .teammates-desc div {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  width: 33%;
+}
+
+main .teammates .teammates-desc div p a {
+  color: #fff;
+  transition: all ease 2s;
+}
+
+main .teammates .teammates-desc div p a:hover {
+  color: #9a9a9a;
+}
+
+main .teammates .teammates-info {
+  text-align: center;
+}
+
+main .teammates .teammates-info h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+main .teammates .teammates-info p {
+  font-size: 30px;
+  margin-top: 0;
 }
 
 nav {
@@ -104,7 +184,79 @@ header .header-content h1, header .header-content p {
   margin: 0;
 }
 
+.contact-iwd {
+  align-items: center;
+  background-color: #ad0037;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+}
+
+.contact-iwd div h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.contact-iwd div p {
+  color: #fff;
+  margin: 0 0 0 5%;
+}
+
+.contact-iwd .link-stream {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.contact-iwd .link-stream a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.gameplay {
+  align-items: center;
+  background-color: #1e1831;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.gameplay div img {
+  border-radius: 60px;
+}
 
 .home {
   background-image: url(images/iwd-intro.gif);
+}
+
+.self-ad {
+  align-items: center;
+  background-image: url(images/self-add.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+}
+
+.self-ad h1 {
+  font-size: 40px;
+}
+
+.self-ad p {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.self-ad p a {
+  color: #fff;
+  text-decoration: none;
 }
