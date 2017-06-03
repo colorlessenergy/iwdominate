@@ -5,12 +5,18 @@ html, body {
 }
 
 footer {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1831;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 400px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .about-footer-iwd ul {
@@ -48,8 +54,13 @@ footer .footer-desc {
 main {
   background-color: #1e1831;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main a {
@@ -57,9 +68,15 @@ main a {
 }
 
 main .about {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 400px;
   text-align: center;
 }
@@ -70,9 +87,13 @@ main .about p {
 }
 
 main .social .social-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main .social .social-contain a {
@@ -82,9 +103,16 @@ main .social .social-contain a {
 main .social .social-contain .bg {
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: relative;
   margin: 3% 0;
   height: 500px;
@@ -99,6 +127,7 @@ main .social .social-contain .bg::before {
   left: 0px;
   opacity: 0;
   position: absolute;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   top: 0px;
   width: 100%;
@@ -114,14 +143,17 @@ main .social .social-contain .bg:hover::before {
 }
 
 main .social .social-contain .bg .desc {
-  transform: translateY(34px);
+  -webkit-transform: translateY(34px);
+          transform: translateY(34px);
   opacity: 0;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 main .social .social-contain .bg:hover > .desc {
   margin-top: 5%;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1;
 }
 
@@ -138,24 +170,37 @@ main .social .social-contain .bg h2, main .social .social-contain .bg p {
 }
 
 main .teammates .teammates-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 500px;
-  justify-content: center;
-  justify-content: space-around;
-  flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   width: 100%;
 }
 
 main .teammates .teammates-desc div {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 33%;
 }
 
 main .teammates .teammates-desc div p a {
   color: #fff;
+  -webkit-transition: all ease 2s;
   transition: all ease 2s;
 }
 
@@ -178,9 +223,15 @@ main .teammates .teammates-info p {
 }
 
 nav {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -190,8 +241,11 @@ nav img {
 }
 
 nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none;
   margin: 0 2% 0 0;
   padding: 0;
@@ -207,19 +261,35 @@ nav .nav li a {
 header {
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
 
 header .header-content {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #009688;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 50px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header-content h1, header .header-content p {
@@ -227,11 +297,19 @@ header .header-content h1, header .header-content p {
 }
 
 .contact-iwd {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ad0037;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 400px;
   text-align: center;
 }
@@ -260,11 +338,16 @@ header .header-content h1, header .header-content p {
 }
 
 .gameplay {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1831;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 300px;
 }
 
@@ -277,15 +360,24 @@ header .header-content h1, header .header-content p {
 }
 
 .self-ad {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(images/self-add.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 400px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .self-ad h1 {
@@ -320,16 +412,23 @@ nav .responsivenav {
   left: 0;
   height: 220px;
   opacity: 0;
+  -webkit-transition: all ease 1s;
   transition: all ease 1s;
   width: 100%;
 }
 
 nav .responsivenav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 14px;
   height: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style-type: none;
   margin: 0 0 0 2%;
   padding: 0;
@@ -338,6 +437,7 @@ nav .responsivenav ul {
 nav .responsivenav ul li a {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
@@ -353,14 +453,23 @@ nav .responsive-nav {
 /*about css*/
 
 .about-info {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1831;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 25px;
   height: 500px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -383,14 +492,23 @@ nav .responsive-nav {
 }
 
 .iwd-process {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1831;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 25px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 300px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .iwd-process ul {
@@ -403,9 +521,13 @@ nav .responsive-nav {
 /*contact html*/
 
 .contact-iwdominate {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(images/iwd-c.jpg);
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 300px;
   position: relative;
@@ -434,12 +556,21 @@ nav .responsive-nav {
 }
 
 .contact-iwdominate-info {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1e1831;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 40px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 400px;
 }
 
@@ -452,6 +583,7 @@ nav .responsive-nav {
 .contact-iwdominate-info ul li a {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -463,21 +595,38 @@ nav .responsive-nav {
 
   footer {
     height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   footer .about-footer-iwd {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 45%;
   }
 
   footer .footer-about {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
 
@@ -495,8 +644,13 @@ nav .responsive-nav {
   }
 
   main .social .social-contain {
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   main .social .social-contain a {
