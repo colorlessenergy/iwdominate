@@ -338,6 +338,11 @@ nav .responsivenav ul {
 nav .responsivenav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: all 1s ease;
+}
+
+nav .responsivenav ul li a:hover {
+  color: #8c8c8c;
 }
 
 nav .responsive-nav {
