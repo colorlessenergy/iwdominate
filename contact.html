@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<header class="contact-iwdominate">
+  {% include nav.html %}
+  <h2>CONTACT IWDOMINATE</h2>
+</header>
+<section class="contact-iwdominate-info">
+  <ul>
+    {% for iwd-c in site.data.social-media %}
+      <li><a href="{{iwd-c.link}}">{{iwd-c.title}}</a></li>
+    {% endfor %}
+  </ul>
+</section>
