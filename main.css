@@ -349,6 +349,18 @@ nav .responsive-nav {
   opacity: 1;
 }
 
+
+/*about css*/
+
+.about {
+  background-image: url(images/about-iwd2.gif);
+  height: 70vh;
+}
+
+.about .header-content {
+  color: #000;
+}
+
 @media screen and (max-width: 800px) {
 
   footer {
