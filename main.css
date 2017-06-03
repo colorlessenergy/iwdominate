@@ -4,6 +4,47 @@ html, body {
   padding: 0;
 }
 
+footer {
+  align-items: center;
+  background-color: #1e1831;
+  color: #fff;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+}
+
+footer .footer-about ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer-about ul li a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+footer .footer-about ul li a:hover {
+  color: #fff;
+}
+
+footer .contact-footer {
+  margin-top: 13%;
+}
+
+footer .footer-about p a {
+  background-color: #ad0037;
+  border-radius: 30px;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+footer .footer-desc {
+  margin: 0 5%;
+  width: 30%;
+}
+
 main {
   background-color: #1e1831;
   color: #fff;
