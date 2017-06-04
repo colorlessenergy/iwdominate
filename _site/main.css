@@ -23,7 +23,7 @@ footer .about-footer-iwd ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
+
 }
 
 footer .about-footer-iwd ul li a {
@@ -637,7 +637,8 @@ nav .responsive-nav {
   }
 
   header .header-content {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
   }
 
   main .about p {
@@ -668,6 +669,12 @@ nav .responsive-nav {
 
   .about-info p {
     width: 85%;
+  }
+
+  .gameplay {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    height: 400px;
   }
 
 }
